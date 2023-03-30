@@ -2,8 +2,7 @@ const customHandlebarsHelpers = require('./handlebars/customHandlebarsHelpers');
 const args = require('minimist')(process.argv.slice(2));
 const path = require('path');
 const scriptPath = path.resolve(__dirname);
-const configFile = args.config || path.join(scriptPath, 'svgToIconFontConfig/configTemplate.js');
-console.log(configFile)
+const configFile = args.config || path.join(scriptPath, 'config/configTemplate.js');
 const iconSvgFixer = require('oslllo-svg-fixer');
 const {generateFonts} = require('fantasticon');
 let config;
@@ -27,6 +26,5 @@ try {
             throw err
         });
 } catch (err) {
-    console.log(config);
     console.error(`Failed to load config file: ${err.message}`)
 }
