@@ -1,0 +1,17 @@
+{
+  "name": "fantasticon-stroke-2-fill",
+  "version": "1.0.0",
+  "description": "A utility for Fantasticon font generation from SVG icons that are created using strokes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fantasticon": "^2.0.0",
+    "handlebars": "^4.7.7",
+    "minimist": "^1.2.8",
+    "oslllo-svg-fixer": "^2.2.0"
+  }
+}
